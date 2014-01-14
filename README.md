@@ -1,6 +1,6 @@
 This is a Github Pages interactives repository.
 You can see the unordered list of interactives here:
-http://scytacki.github.io/lab-interactives/
+http://ddamelin.github.io/lab-interactives/
 
 To view this site locally:
 
