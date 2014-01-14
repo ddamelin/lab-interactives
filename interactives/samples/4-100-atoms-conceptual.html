@@ -26,18 +26,9 @@ INTERACTIVE= {
   ],
   "parameters": [
     {
-      "name": "charge",
+      "name": "shading",
       "initialValue": false,
-      "onChange": [
-        "batch(function(){",
-        "  var count = getNumberOfAtoms();",
-        "  var chargeVal;",
-        "  if (value) { chargeVal = 1.5 } else { chargeVal = 0; }",
-        "  for (var i=0; i < count; i++) {",
-        "    setAtomProperties(i, {charge: chargeVal}, false, false);",
-        "    chargeVal *= -1;",
-        "  }",
-        "  set('chargeShading', value);",
+      "onChange": "set('keShading', value);",
         "});"
       ]
     },
@@ -51,8 +42,8 @@ INTERACTIVE= {
     {
       "type": "checkbox",
       "id": "charged-box",
-      "text": "Charge",
-      "property": "charge"
+      "text": "KE Shading",
+      "property": "shading"
     },
     {
       "type": "slider",
